@@ -31,6 +31,8 @@
 	fuzzel clipman bemenu
 	gammastep swww swaybg gdu
 
+	ghidra
+
 	pavucontrol heroic
 
 	xwayland

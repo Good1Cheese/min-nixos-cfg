@@ -3,6 +3,7 @@
     ./user.nix
     ./env.nix
     ./adb.nix
+    ./defaultBrowser.nix
 	./drivers.nix
 	./greetd.nix
     ./audio.nix
