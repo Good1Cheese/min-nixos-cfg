@@ -8,10 +8,15 @@
   networking.networkmanager.enable = true;
 
   environment.systemPackages = with pkgs; [
+    papirus-nord
+    home-manager
+	libsForQt5.qtstyleplugin-kvantum
+	libsForQt5.qt5ct
+
 	# imp
 	pkgs.waybar wl-clipboard xwayland
 	gammastep swaybg mako
-	foot fish
+	foot fish watershot
 	fuzzel clipman
 
     # utils

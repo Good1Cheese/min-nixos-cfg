@@ -1,15 +1,22 @@
 {
-    description = "System config";
+  description = "System config";
 
-    inputs = {
-        nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
-        # nixpkgs.url = "github:nixos/nixpkgs/nixos-24.05";
-    };
+  inputs = {
+    nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
+    home-manager.url = "github:nix-community/home-manager";
+  };
 
-    outputs = { nixpkgs, ... }: {
-        nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
-            system = "x86_64-linux";
-            modules = [ ./nixos/configuration.nix ];
-        };
+  outputs = { nixpkgs, home-manager, ... }:
+    let system = "x86_64-linux";
+    in {
+      nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
+        inherit system;
+        modules = [ ./nixos/configuration.nix ];
+      };
+
+      homeConfigurations.cheese = home-manager.lib.homeManagerConfiguration {
+        pkgs = nixpkgs.legacyPackages.${system};
+        modules = [ ./nixos/home.nix ];
+      };
     };
 }
