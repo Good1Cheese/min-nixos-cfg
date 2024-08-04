@@ -8,34 +8,30 @@
   networking.networkmanager.enable = true;
 
   environment.systemPackages = with pkgs; [
+	# imp
+	pkgs.waybar wl-clipboard xwayland
+	gammastep swaybg mako
+	foot fish
+	fuzzel clipman
+
     # utils
-    wl-clipboard pkgs.waybar
-	wget git stow gcc lshw jq
-    gnumake devour fastfetch
-	zip unzip ffmpeg openssl
-
-    # stuff
-    fd ouch unar
-	unrar-wrapper ffmpegthumbnailer poppler
-	chafa doas broot fzf atool
+	sqlite wget git stow gcc
+	gnumake devour fastfetch
+	zip unzip unar unrar-wrapper
+	lshw ffmpeg openssl
+	doas atool
 	trash-cli gtrash
-	ripgrep silicon
-
-    # workflow
 	bluez bluez-tools bluetuith
-	foot fish neovim yazi superfile
+
+	# workflow
+	yazi jq fd ouch ffmpegthumbnailer poppler broot fzf 
+	neovim ripgrep silicon
+	lazygit gdu btop
 	python312Packages.adblock qutebrowser
+
+	# programs
 	firefox burpsuite zap
-	# connman impala
-	lazygit mako btop
-	fuzzel clipman bemenu
-	gammastep swww swaybg gdu
-
-	ghidra
-
-	pavucontrol heroic
-
-	xwayland
+	ghidra pavucontrol heroic
 	telegram-desktop gajim
   ];
 
