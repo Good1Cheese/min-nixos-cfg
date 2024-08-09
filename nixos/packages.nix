@@ -20,11 +20,12 @@
 	fuzzel clipman
 
     # utils
+	espeak-classic
 	sqlite wget git stow gcc
 	gnumake devour fastfetch
 	zip unzip unar unrar-wrapper
 	lshw ffmpeg openssl
-	doas atool
+	doas atool bat
 	trash-cli gtrash
 	bluez bluez-tools bluetuith
 
