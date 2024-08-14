@@ -1,6 +1,3 @@
-# sudo nix-channel --update
-# nix flake update
-
 {
   imports = [
     ./hardware-configuration.nix

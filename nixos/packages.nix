@@ -1,7 +1,6 @@
 { pkgs, ... }: {
   nixpkgs.config = {
     allowUnfree = true;
-	# allowBroken = true;
   };
 
   networking.wireless.iwd.enable = true;
@@ -37,7 +36,8 @@
 
 	# programs
 	firefox burpsuite zap
-	ghidra pavucontrol heroic
+	ghidra cutter rizin
+	pavucontrol heroic
 	telegram-desktop gajim
   ];
 

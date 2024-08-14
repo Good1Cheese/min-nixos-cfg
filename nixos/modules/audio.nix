@@ -3,7 +3,7 @@
   # sound.enable = true;
 
   # rtkit is optional but recommended
-  # security.rtkit.enable = true;
+  security.rtkit.enable = true;
 
   services.pipewire = {
     enable = true;

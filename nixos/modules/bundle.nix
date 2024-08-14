@@ -8,6 +8,7 @@
 	./greetd.nix
     ./audio.nix
     ./wine.nix
+    ./nix-ld.nix
     ./cleanup.nix
     ./bluetooth.nix
     ./boot.nix
