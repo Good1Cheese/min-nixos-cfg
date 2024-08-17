@@ -16,14 +16,15 @@
 	pkgs.waybar wl-clipboard xwayland
 	gammastep swaybg mako
 	foot fish
-	fuzzel clipman
+	fuzzel bemenu
+	clipman
 
     # utils
 	espeak-classic
 	sqlite wget git stow gcc
 	gnumake devour fastfetch
 	zip unzip unar unrar-wrapper
-	lshw ffmpeg openssl
+	lshw ffmpeg openssl pugixml
 	doas atool bat
 	trash-cli gtrash
 	bluez bluez-tools bluetuith
@@ -38,6 +39,8 @@
 	firefox burpsuite zap
 	pavucontrol heroic
 	telegram-desktop gajim
+
+	drawing
   ];
 
   fonts.packages = with pkgs; [

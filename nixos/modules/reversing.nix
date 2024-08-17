@@ -1,11 +1,10 @@
 { pkgs, ... }: {
   environment.systemPackages = with pkgs; [
-    # CLI
     gdb gef
-	rizin
-
-	# GUI
+	radare2 iaito
+	# rizin cutter
+    (rizin.withPlugins (ps: with ps; [ rz-ghidra ]))
+    (cutter.withPlugins (ps: with ps; [ rz-ghidra ]))
     ghidra
-    cutter
   ];
 }
