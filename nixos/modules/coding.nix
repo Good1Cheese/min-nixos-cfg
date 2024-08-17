@@ -2,9 +2,6 @@
 
 { pkgs, ... }: {
   environment.systemPackages = with pkgs; [
-	# Generic
-	gdb
-
     # Lua
     lua51Packages.lua
     luajitPackages.luarocks

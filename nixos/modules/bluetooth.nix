@@ -6,3 +6,10 @@
     powerOnBoot = true;
   };
 }
+
+# power on
+# agent ot
+# default-agent
+# scan on
+# pair [hex]
+# connect [hex]

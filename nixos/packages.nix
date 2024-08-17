@@ -15,7 +15,7 @@
 	# imp
 	pkgs.waybar wl-clipboard xwayland
 	gammastep swaybg mako
-	foot fish watershot
+	foot fish
 	fuzzel clipman
 
     # utils
@@ -30,13 +30,12 @@
 
 	# workflow
 	yazi jq fd ouch ffmpegthumbnailer poppler broot fzf 
-	neovim ripgrep silicon
+	neovim vim ripgrep silicon
 	lazygit gdu btop
 	python312Packages.adblock qutebrowser
 
 	# programs
 	firefox burpsuite zap
-	ghidra cutter rizin
 	pavucontrol heroic
 	telegram-desktop gajim
   ];

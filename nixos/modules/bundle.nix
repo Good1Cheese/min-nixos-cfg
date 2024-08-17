@@ -14,7 +14,8 @@
     ./boot.nix
     ./security.nix
     ./v4l2.nix
-    ./LSP.nix
+    ./coding.nix
+    ./reversing.nix
     ./network.nix
     ./trim.nix
   ];
