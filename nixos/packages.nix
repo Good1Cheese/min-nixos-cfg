@@ -40,7 +40,7 @@
 	pavucontrol heroic
 	telegram-desktop gajim
 
-	drawing
+	drawing libreoffice
   ];
 
   fonts.packages = with pkgs; [

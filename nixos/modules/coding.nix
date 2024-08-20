@@ -8,8 +8,11 @@
     lua-language-server
     stylua
 
-    # C++
+    # C/C++
+	clang
+	glibc
     clang-tools
+	# criterion
 
     # ASM
     nasm
@@ -28,11 +31,5 @@
     ruby
     rubyPackages.solargraph
     rubyPackages.rexml
-
-    # HTML
-    # ast-grep
-
-    # Py
-    # ruff python312Packages.python-lsp-server
   ];
 }
