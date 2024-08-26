@@ -30,7 +30,8 @@
 	foot fish
 	russ goread nom
 	bemenu clipman
-	neovim ripgrep silicon
+	neovim ripgrep
+	# silicon
 	lazygit gdu btop
 	mpv nomacs
 	python312Packages.adblock qutebrowser
