@@ -1,22 +1,9 @@
-{
-  imports = [
-    ./user.nix
-    ./env.nix
-    ./adb.nix
-    ./defaultBrowser.nix
-	./drivers.nix
-	./greetd.nix
-    ./audio.nix
-    ./wine.nix
-    ./nix-ld.nix
-    ./cleanup.nix
-    ./bluetooth.nix
-    ./boot.nix
-    ./security.nix
-    ./v4l2.nix
-    ./coding.nix
-    ./reversing.nix
-    ./network.nix
-    ./trim.nix
-  ];
+let
+  files = builtins.readDir ./.;
+  name = "bundle.nix";
+  toPath = f: ./. + "/${f}";
+in {
+  imports =
+    builtins.map toPath (builtins.attrNames (removeAttrs files [ name ]));
 }
+
