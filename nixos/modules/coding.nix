@@ -2,6 +2,8 @@
 
 { pkgs, ... }: {
   environment.systemPackages = with pkgs; [
+    python3
+
     # Lua
     lua51Packages.lua
     luajitPackages.luarocks
@@ -9,10 +11,10 @@
     stylua
 
     # C/C++
-	clang
-	glibc
+    clang
+    glibc
     clang-tools
-	# criterion
+    # criterion
 
     # ASM
     nasm
