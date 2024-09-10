@@ -3,6 +3,7 @@
 { pkgs, ... }: {
   environment.systemPackages = with pkgs; [
     python3
+    godot_4
 
     # Lua
     lua51Packages.lua

@@ -7,15 +7,11 @@
   networking.networkmanager.enable = true;
 
   environment.systemPackages = with pkgs; [
-    papirus-nord
-    libsForQt5.qtstyleplugin-kvantum
-    libsForQt5.qt5ct
-
     # imp
-    pkgs.waybar home-manager
+    waybar home-manager
     wl-clipboard xwayland
     gammastep swaybg mako
-    hyprcursor
+    hyprcursor wtype
 
     # utils
     espeak-classic
@@ -25,6 +21,9 @@
     lshw ffmpeg openssl pugixml
     doas atool bat
     trash-cli gtrash
+    python312Packages.adblock 
+    python312Packages.pynput
+    python312Packages.pykeepass
 
     # workflow
     yazi jq fd ouch ffmpegthumbnailer poppler broot fzf 
@@ -35,19 +34,20 @@
     # silicon
     lazygit gdu btop
     mpv nomacs
-    python312Packages.adblock qutebrowser
 
     # programs
+    qutebrowser librewolf
     burpsuite zap
-    pavucontrol heroic
-    telegram-desktop gajim
-    drawing libreoffice
-    librewolf
+    pavucontrol
+    heroic
+    telegram-desktop
+    gajim
+    drawing
+    libreoffice
     keepassxc
-    nemo
-    discord betterdiscordctl
-    gparted
-    lxde.lxsession
+    discord betterdiscordctl vesktop
+    gparted lxde.lxsession
+    xfce.thunar mate.caja
   ];
 
   fonts.packages = with pkgs; [
