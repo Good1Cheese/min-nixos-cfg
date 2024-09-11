@@ -10,8 +10,9 @@
     # imp
     waybar home-manager
     wl-clipboard xwayland
-    gammastep swaybg mako
+    gammastep swaybg mako libnotify
     hyprcursor wtype
+    hyprshot grim slurp hyprpicker
 
     # utils
     espeak-classic

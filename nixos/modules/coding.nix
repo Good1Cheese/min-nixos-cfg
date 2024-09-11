@@ -5,6 +5,10 @@
     python3
     godot_4
 
+    # Python
+    python312Packages.jedi
+    python312Packages.python-lsp-server
+
     # Lua
     lua51Packages.lua
     luajitPackages.luarocks
