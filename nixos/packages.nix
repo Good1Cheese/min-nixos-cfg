@@ -13,6 +13,7 @@
     gammastep swaybg mako libnotify
     hyprcursor wtype
     hyprshot grim slurp hyprpicker
+    xdragon
 
     # utils
     espeak-classic
@@ -46,9 +47,11 @@
     drawing
     libreoffice
     keepassxc
+    obs-studio
     discord betterdiscordctl vesktop
     gparted lxde.lxsession
     xfce.thunar mate.caja
+    android-file-transfer
   ];
 
   fonts.packages = with pkgs; [
