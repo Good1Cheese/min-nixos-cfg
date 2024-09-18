@@ -17,10 +17,10 @@
     fsType = "ext4";
   };
 
- # fileSystems."/mnt/hdd" = {
- #   device = "/dev/disk/by-uuid/9e3e4e08-d279-4069-940f-fa4b4f24ef9a";
- #   fsType = "ext4";
- # };
+  fileSystems."/mnt/hdd" = {
+    device = "/dev/disk/by-uuid/9e3e4e08-d279-4069-940f-fa4b4f24ef9a";
+    fsType = "ext4";
+  };
 
   fileSystems."/boot" = {
     device = "/dev/disk/by-uuid/BDBD-595C";

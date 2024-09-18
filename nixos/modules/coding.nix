@@ -2,10 +2,16 @@
 
 { pkgs, ... }: {
   environment.systemPackages = with pkgs; [
-    python3
+    # Java
+    jdk
+    jdt-language-server
+
+    # GDScript
     godot_4
+    gdtoolkit_4
 
     # Python
+    python3
     python312Packages.jedi
     python312Packages.python-lsp-server
 
