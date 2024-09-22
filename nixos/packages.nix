@@ -32,25 +32,22 @@
     foot fish
     russ goread nom
     bemenu clipman keepmenu
-    neovim ripgrep
-    # silicon
+    neovim ripgrep silicon
     lazygit gdu btop
     mpv nomacs
 
     # programs
-    qutebrowser librewolf
+    librewolf
     burpsuite zap
     pavucontrol
     heroic
     telegram-desktop
-    gajim
     drawing
     libreoffice
     keepassxc
     obs-studio
     discord betterdiscordctl vesktop
-    gparted lxde.lxsession
-    xfce.thunar mate.caja
+    lxde.lxsession
     android-file-transfer
   ];
 
