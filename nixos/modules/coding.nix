@@ -4,6 +4,8 @@
   environment.systemPackages = with pkgs; [
     # Java
     jdk
+    maven
+    nodejs_22
     jdt-language-server
 
     # GDScript

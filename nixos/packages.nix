@@ -17,6 +17,7 @@
 
     # utils
     espeak-classic
+    libwebp
     sqlite wget git stow gcc
     gnumake fastfetch
     zip unzip unar unrar-wrapper
@@ -32,7 +33,7 @@
     foot fish
     russ goread nom
     bemenu clipman keepmenu
-    neovim ripgrep silicon
+    neovim ripgrep silicon neovim-remote
     lazygit gdu btop
     mpv nomacs
 
@@ -41,10 +42,12 @@
     burpsuite zap
     pavucontrol
     heroic
+    scanmem
     telegram-desktop
     drawing
     libreoffice
     keepassxc
+    dialect
     obs-studio
     discord betterdiscordctl vesktop
     lxde.lxsession
