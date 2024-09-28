@@ -1,12 +1,12 @@
-{ pkgs, ... }: {
+{ pkgs, pkgs-stable, ... }: {
   nixpkgs.config = {
     allowUnfree = true;
   };
 
   networking.wireless.iwd.enable = true;
   networking.networkmanager.enable = true;
-
-  environment.systemPackages = with pkgs; [
+  
+  environment.systemPackages = (with pkgs; [
     # imp
     waybar home-manager
     wl-clipboard xwayland
@@ -31,18 +31,19 @@
     # workflow
     yazi jq fd ouch ffmpegthumbnailer poppler broot fzf 
     foot fish
-    russ goread nom
+    goread
     bemenu clipman keepmenu
     neovim ripgrep silicon neovim-remote
     lazygit gdu btop
     mpv nomacs
 
     # programs
+    gimp-with-plugins
+    openshot-qt libsForQt5.libopenshot libsForQt5.libopenshot-audio
     librewolf
     burpsuite zap
     pavucontrol
     heroic
-    scanmem
     telegram-desktop
     drawing
     libreoffice
@@ -52,12 +53,20 @@
     discord betterdiscordctl vesktop
     lxde.lxsession
     android-file-transfer
-  ];
+    kdenlive
+  ]) 
+
+  ++
+
+  (with pkgs-stable; [
+    # stuff
+  ]);
 
   fonts.packages = with pkgs; [
     (nerdfonts.override { fonts = [ "JetBrainsMono" ]; })
     (nerdfonts.override { fonts = [ "DejaVuSansMono" ]; })
-	font-awesome
-	noto-fonts
+    league-gothic
+    font-awesome
+    noto-fonts
   ];
 }
