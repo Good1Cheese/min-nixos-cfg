@@ -2,6 +2,10 @@
 
 { pkgs, ... }: {
   environment.systemPackages = with pkgs; [
+    lazarus-qt
+    fpc
+    libqt5pas
+
     # Java
     jdk
     maven
@@ -14,6 +18,8 @@
 
     # Python
     python3
+    ruff
+    python312Packages.pip
     python312Packages.jedi
     python312Packages.python-lsp-server
 
