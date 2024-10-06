@@ -24,12 +24,11 @@
     lshw ffmpeg openssl pugixml
     doas atool bat
     trash-cli gtrash
-    python312Packages.adblock 
-    python312Packages.pynput
-    python312Packages.pykeepass
+    killall
+    yt-dlp
 
     # workflow
-    yazi jq fd ouch ffmpegthumbnailer poppler broot fzf 
+    yazi jq fd ouch ffmpegthumbnailer poppler poppler_utils broot fzf 
     foot fish
     goread
     bemenu clipman keepmenu
@@ -39,7 +38,7 @@
 
     # programs
     gimp-with-plugins
-    openshot-qt libsForQt5.libopenshot libsForQt5.libopenshot-audio
+    figma-linux
     librewolf
     burpsuite zap
     pavucontrol
@@ -49,11 +48,13 @@
     libreoffice
     keepassxc
     dialect
-    obs-studio
     discord betterdiscordctl vesktop
     lxde.lxsession
     android-file-transfer
+    obs-studio
+    audacity
     kdenlive
+    olive-editor
   ]) 
 
   ++

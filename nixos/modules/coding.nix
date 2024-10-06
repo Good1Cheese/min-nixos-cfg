@@ -17,11 +17,15 @@
     gdtoolkit_4
 
     # Python
-    python3
     ruff
+    tk
+    python312
     python312Packages.pip
     python312Packages.jedi
     python312Packages.python-lsp-server
+    python312Packages.adblock 
+    python312Packages.pynput
+    python312Packages.pykeepass
 
     # Lua
     lua51Packages.lua
