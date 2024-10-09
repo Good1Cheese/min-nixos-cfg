@@ -9,6 +9,7 @@
   environment.systemPackages = (with pkgs; [
     # imp
     waybar home-manager
+    xorg.libX11
     wl-clipboard xwayland
     gammastep swaybg mako libnotify
     hyprcursor wtype
@@ -40,6 +41,7 @@
     gimp-with-plugins
     figma-linux
     librewolf
+    brave
     burpsuite zap
     pavucontrol
     heroic

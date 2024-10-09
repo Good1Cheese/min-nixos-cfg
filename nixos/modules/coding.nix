@@ -8,8 +8,9 @@
 
     # Java
     jdk
+    gradle
     maven
-    nodejs_22
+    spring-boot-cli
     jdt-language-server
 
     # GDScript
