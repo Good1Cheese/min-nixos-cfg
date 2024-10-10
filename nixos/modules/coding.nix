@@ -6,6 +6,9 @@
     fpc
     libqt5pas
 
+    # Docker
+    dockerfile-language-server-nodejs
+
     # Java
     jdk
     gradle

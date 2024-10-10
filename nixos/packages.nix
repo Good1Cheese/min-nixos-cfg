@@ -9,7 +9,9 @@
   environment.systemPackages = (with pkgs; [
     # imp
     waybar home-manager
-    xorg.libX11
+    xorg.xlsclients
+    # xorg.libX11
+    # xwayland-satellite
     wl-clipboard xwayland
     gammastep swaybg mako libnotify
     hyprcursor wtype
@@ -25,6 +27,7 @@
     lshw ffmpeg openssl pugixml
     doas atool bat
     trash-cli gtrash
+    util-linux
     killall
     yt-dlp
 
@@ -34,7 +37,9 @@
     goread
     bemenu clipman keepmenu
     neovim ripgrep silicon neovim-remote
-    lazygit gdu btop
+    lazygit lazydocker
+    # termshark
+    gdu btop
     mpv nomacs
 
     # programs
@@ -51,6 +56,7 @@
     keepassxc
     dialect
     discord betterdiscordctl vesktop
+    revolt-desktop
     lxde.lxsession
     android-file-transfer
     obs-studio
