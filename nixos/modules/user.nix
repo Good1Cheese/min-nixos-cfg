@@ -5,8 +5,15 @@
     users.cheese = {
       isNormalUser = true;
       description = "cheese";
-      extraGroups =
-        [ "adbusers" "docker" "networkmanager" "video" "wheel" "input" "libvirtd" ];
+      extraGroups = [
+        "adbusers"
+        "docker"
+        "networkmanager"
+        "video"
+        "wheel"
+        "input"
+        "libvirtd"
+      ];
       packages = with pkgs; [ ];
     };
   };

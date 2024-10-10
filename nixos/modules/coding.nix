@@ -15,6 +15,7 @@
     maven
     spring-boot-cli
     jdt-language-server
+    jetbrains.idea-community
 
     # GDScript
     godot_4

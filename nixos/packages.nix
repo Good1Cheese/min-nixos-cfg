@@ -9,10 +9,7 @@
   environment.systemPackages = (with pkgs; [
     # imp
     waybar home-manager
-    xorg.xlsclients
-    # xorg.libX11
-    # xwayland-satellite
-    wl-clipboard xwayland
+    wl-clipboard 
     gammastep swaybg mako libnotify
     hyprcursor wtype
     hyprshot grim slurp hyprpicker
