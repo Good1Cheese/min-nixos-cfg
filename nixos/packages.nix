@@ -9,7 +9,7 @@
   environment.systemPackages = (with pkgs; [
     # imp
     waybar home-manager
-    wl-clipboard 
+    wl-clipboard xwayland
     gammastep swaybg mako libnotify
     hyprcursor wtype
     hyprshot grim slurp hyprpicker

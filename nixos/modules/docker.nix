@@ -11,9 +11,10 @@
   };
 
   environment.systemPackages = with pkgs; [ 
-    xwayland weston 
-    x11docker catatonit
-    xpra xdotool xclip
+    weston x11docker catatonit
+    xpra nx-libs xdotool xclip
+
     xorg.xhost xorg.xrandr xorg.xdpyinfo xorg.xauth xorg.libxcvt
+    xorg.xinit
   ];
 }
