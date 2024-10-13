@@ -1,14 +1,8 @@
 { config, pkgs, ... }: {
-  environment.systemPackages = with pkgs;
-    [
-      # Enables v4l2loopback GUI utilities.
-      v4l-utils
-    ];
+  environment.systemPackages = with pkgs; [ scrcpy v4l-utils ];
 
   boot = {
-    # Make v4l2loopback kernel module available to NixOS.
     extraModulePackages = with config.boot.kernelPackages; [ v4l2loopback ];
-    # Activate kernel module(s).
     kernelModules = [
       # Virtual camera.
       "v4l2loopback"

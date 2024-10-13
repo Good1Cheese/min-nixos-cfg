@@ -10,12 +10,14 @@
     dockerfile-language-server-nodejs
 
     # Java
-    jdk
+    jetbrains.jdk
     gradle
     maven
     spring-boot-cli
     jdt-language-server
     jetbrains.idea-community
+    tiled
+    libsForQt5.qt5.qtwayland
 
     # GDScript
     godot_4
@@ -23,7 +25,6 @@
 
     # Python
     ruff
-    tk
     python312
     python312Packages.pip
     python312Packages.jedi
