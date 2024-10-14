@@ -1,4 +1,8 @@
 { pkgs, pkgs-stable, ... }: {
+  imports = [
+    ./pkgs.nix
+  ];
+
   environment.systemPackages = (with pkgs; [
     home-manager
     waybar

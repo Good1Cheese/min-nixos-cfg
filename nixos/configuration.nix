@@ -2,8 +2,8 @@
   imports = [
     ./hardware-configuration.nix
     ./modules/bundle.nix
-    ./packages.nix
     ./programs/bundle.nix
+    ./main-pkgs.nix
   ];
 
   networking.wireless.iwd.enable = true;

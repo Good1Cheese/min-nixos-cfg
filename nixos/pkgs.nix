@@ -1,14 +1,9 @@
-{ pkgs, pkgs-stable, ... }: {
-  nixpkgs.config = {
-    allowUnfree = true;
-  };
-
-  networking.wireless.iwd.enable = true;
-  networking.networkmanager.enable = true;
-  
+{ pkgs, ... }: {
   environment.systemPackages = (with pkgs; [
     sqlite fastfetch
     trash-cli gtrash
+
+    lazygit lazydocker
 
     # workflow
     zip unzip unar unrar-wrapper
@@ -18,27 +13,30 @@
     goread
     bemenu clipman keepmenu
     neovim ripgrep silicon neovim-remote
-    lazygit lazydocker
     # termshark
     gdu btop
     mpv nomacs
 
-    # programs
+    # daily
     figma-linux
-    librewolf
-    brave
-    burpsuite zap
-    pavucontrol
-    heroic
-    telegram-desktop
-    drawing
+    librewolf brave
     libreoffice
     keepassxc
+
+    # stuff
+    drawing
+    pavucontrol
     dialect
+    android-file-transfer
+    heroic
+    burpsuite zap
+
+    # social
+    telegram-desktop
     discord betterdiscordctl vesktop
     revolt-desktop
-    android-file-transfer
 
+    # video editing
     gimp
     obs-studio
     audacity
