@@ -2,6 +2,9 @@
 
 { pkgs, ... }: {
   environment.systemPackages = with pkgs; [
+    espeak-classic
+
+    # Pascal
     lazarus-qt
     fpc
     libqt5pas
@@ -9,8 +12,12 @@
     # Docker
     dockerfile-language-server-nodejs
 
+    # C#
+    omnisharp-roslyn
+    dotnet-sdk
+
     # Java
-    jetbrains.jdk
+    jdk
     gradle
     maven
     spring-boot-cli
@@ -30,8 +37,6 @@
     python312Packages.jedi
     python312Packages.python-lsp-server
     python312Packages.adblock 
-    python312Packages.pynput
-    python312Packages.pykeepass
 
     # Lua
     lua51Packages.lua

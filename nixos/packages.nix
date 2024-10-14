@@ -7,28 +7,12 @@
   networking.networkmanager.enable = true;
   
   environment.systemPackages = (with pkgs; [
-    # imp
-    waybar home-manager
-    wl-clipboard xwayland
-    gammastep swaybg mako libnotify
-    hyprcursor wtype
-    hyprshot grim slurp hyprpicker
-    xdragon
-
-    # utils
-    espeak-classic
-    libwebp
-    sqlite wget git stow gcc
-    gnumake fastfetch
-    zip unzip unar unrar-wrapper
-    lshw ffmpeg openssl pugixml
-    doas atool bat
+    sqlite fastfetch
     trash-cli gtrash
-    util-linux
-    killall
-    yt-dlp
 
     # workflow
+    zip unzip unar unrar-wrapper
+    atool bat
     yazi jq fd ouch ffmpegthumbnailer poppler poppler_utils broot fzf 
     foot fish
     goread
@@ -40,7 +24,6 @@
     mpv nomacs
 
     # programs
-    gimp-with-plugins
     figma-linux
     librewolf
     brave
@@ -54,25 +37,13 @@
     dialect
     discord betterdiscordctl vesktop
     revolt-desktop
-    lxde.lxsession
     android-file-transfer
+
+    gimp
     obs-studio
     audacity
+    libwebp
     kdenlive
     olive-editor
-  ]) 
-
-  ++
-
-  (with pkgs-stable; [
-    # stuff
   ]);
-
-  fonts.packages = with pkgs; [
-    (nerdfonts.override { fonts = [ "JetBrainsMono" ]; })
-    (nerdfonts.override { fonts = [ "DejaVuSansMono" ]; })
-    league-gothic
-    font-awesome
-    noto-fonts
-  ];
 }
