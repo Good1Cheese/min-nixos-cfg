@@ -4,11 +4,6 @@
     sqlite fastfetch
     trash-cli gtrash
 
-    iptables
-    gawk
-    nftables
-    ipset
-
     lazygit lazydocker
 
     # workflow
