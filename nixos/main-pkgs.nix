@@ -1,4 +1,5 @@
-{ pkgs, pkgs-stable, ... }: {
+# { pkgs, pkgs-stable, ... }: {
+{ pkgs, ... }: {
   imports = [
     ./pkgs.nix
   ];
@@ -25,13 +26,13 @@
     ffmpeg
     openssl
     util-linux
-  ])
-
-  ++
-
-  (with pkgs-stable; [
-    # stuff
   ]);
+
+  # ++
+
+  # (with pkgs-stable; [
+    # teamspeak_client
+  # ]);
 
   fonts.packages = with pkgs; [
     (nerdfonts.override { fonts = [ "JetBrainsMono" ]; })

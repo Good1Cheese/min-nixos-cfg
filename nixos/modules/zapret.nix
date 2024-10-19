@@ -1,0 +1,3 @@
+{
+	zapret.enable = true;
+}

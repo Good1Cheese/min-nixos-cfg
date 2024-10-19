@@ -42,6 +42,7 @@
     lua51Packages.lua
     luajitPackages.luarocks
     lua-language-server
+    luaformatter
     stylua
 
     # C/C++
